@@ -1,0 +1,9 @@
+Striyskyi, 800, 20
+Central, 5000, 40
+South, 220, 10
+West, 100, 15
+Oaks, 400, 19
+Klenoviy, 300, 23
+Hai, 340, 23
+National, 1000, 50
+Nulp, 5, 100
