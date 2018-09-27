@@ -8,7 +8,6 @@ class Park:
         return "Adress: " + self.adress + "| " + "Bikelanes length: " + str(self.bikelanes_length) + "| " + \
                "price: " + str(self.price)
 
-
     #insertion sort by the bikelanes length by recurrence
     @staticmethod
     def insertion_sort(parks):
@@ -30,10 +29,10 @@ compares = 0
 swaps = 0
 
 def set_global_vars():
-    global compares
     global swaps
-    compares += 1
+    global compares
     swaps += 1
+    compares += 1
 
 def print_global_vars():
     global compares

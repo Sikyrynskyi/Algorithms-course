@@ -34,8 +34,8 @@ if __name__ == "__main__":
     print("\n\nMerge Sort:")
     start_time = time.clock()
     #had to do that because otherwise it wouldnt be showed
-    temp_var = merge_sort(parks_list)
+    temp = merge_sort(parks_list)
     elapsed_time = time.clock() - start_time
-    print_list(temp_var)
-    print_global_vars()
+    print_list(temp)
     print("Timing: " + str(elapsed_time))
+    print_global_vars()
