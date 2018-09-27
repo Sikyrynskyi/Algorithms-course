@@ -1,6 +1,7 @@
 import time
 from Park import Park
 from Park import merge_sort
+from Park import print_global_vars
 
 # read from file and create list
 def read_file():
@@ -36,4 +37,5 @@ if __name__ == "__main__":
     temp_var = merge_sort(parks_list)
     elapsed_time = time.clock() - start_time
     print_list(temp_var)
+    print_global_vars()
     print("Timing: " + str(elapsed_time))

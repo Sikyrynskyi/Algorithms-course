@@ -26,6 +26,21 @@ class Park:
         print("Compares: " + str(compares))
         print("Swaps: " + str(swaps))
 
+compares = 0
+swaps = 0
+
+def set_global_vars():
+    global compares
+    global swaps
+    compares += 1
+    swaps += 1
+
+def print_global_vars():
+    global compares
+    print("Compares: " + str(compares))
+    global swaps
+    print("Swaps: " + str(swaps))
+
 #merge sort by the ticket price on growth
 #split list into two
 def merge_sort(parks):
@@ -36,7 +51,6 @@ def merge_sort(parks):
 
         sorted_left_list = merge_sort(left_list)
         sorted_right_list = merge_sort(right_list)
-
         return merge(sorted_left_list, sorted_right_list)
     else:
         return parks
@@ -53,6 +67,7 @@ def merge(left_list, right_list):
         else:
             merged_list.append(right_list[j])
             j += 1
+        set_global_vars()
     merged_list.extend(left_list[i:])
     merged_list.extend(right_list[j:])
     return merged_list
